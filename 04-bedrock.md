@@ -22,7 +22,7 @@ npm install --save @winglibs/bedrock
 
 ## Let's use the Bedrock module 
 
-Create the following `main.w` file
+Create the following `bedrock.main.w` file
 
 ```ts
 bring cloud;
@@ -50,7 +50,7 @@ new cloud.Function(inflight (topic: str) => {
 Run the above code:
 
 ```sh
-wing run main.w
+wing run bedrock.main.w
 ```
 
 Now you can invoke the cloud.Function and provide it with a joke topic, using the **Invoke** button.
@@ -58,4 +58,4 @@ Now you can invoke the cloud.Function and provide it with a joke topic, using th
 ![Console Invoke](./assets/bedrock-console.png)
 
 
-🚀 In the Wing Console, you can push messages to the Queue and observe the files created in the Bucket. 🚀
+🚀 We will later use the bedrock module to fix the grammar of markdown files, but first lets create a GitHub app 🚀
