@@ -69,4 +69,4 @@ You should see the log notifying you that a PR was created?
 Follow @winglibs/github [README.md](https://www.npmjs.com/package/@winglibs/github) file to see how to replace all 
 changed markdown files with a uppercase version of them.
 
-🚀 Great, next we will use anthropic.claude-v2:1 foundation model to make the correct commit 🚀
+🚀 Great, next we will use `anthropic.claude-v2:1` foundation model to make the correct commit 🚀
