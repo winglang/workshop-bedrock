@@ -31,19 +31,13 @@ let claude = new bedrock.Model("anthropic.claude-v2:1") as "claude";
 
 new cloud.Function(inflight (topic: str) => {
   let res = claude.invoke({
-    prompt: "
-
-Human: Tell me a joke about {topic}
-
-Assistant:",
+    prompt: "\n\nHuman: Tell me a joke about {topic}\n\nAssistant:",
     max_tokens_to_sample: 300,
     temperature: 0.5,
     top_k: 250,
     top_p: 1,
     stop_sequences: [
-      "
-
-Human:"
+      "\n\nHuman:"
     ],
     anthropic_version: "bedrock-2023-05-31"
    });
