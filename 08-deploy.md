@@ -1,8 +1,8 @@
-In this section we will deploy the application into our own AWS account
+In this section, we will deploy the application into our own AWS account.
 
 ## The Code
 
-Here is the complete code, feel free to use it or modify it.
+Here is the complete code; feel free to use or modify it.
 
 ```ts
 bring cloud;
@@ -112,28 +112,27 @@ let markdown = new github.ProbotApp(
 
 ```
 
-## Create a new GitHub App
+## Create a New GitHub App
 
-We want to have different GitHub apps for Development and Production, 
-please go to the [Create GitHub App Instructions](./05-create-github-app.md) and create another app with the same name, but without the "(dev)" postfix (e.g. "My English Editor") and a different webhook secret
+We want to have different GitHub apps for Development and Production. 
+Please go to the [Create GitHub App Instructions](./05-create-github-app.md) and create another app with the same name but without the "(dev)" postfix (e.g., "My English Editor") and a different webhook secret.
 
-## Store secrets in AWS Secret Manager
+## Store Secrets in AWS Secret Manager
 
-We want our application to read the Secrets from AWS Secret Manager
-The simplest way is to use AWS CLI in order to generate these secrets.
+We want our application to read the Secrets from AWS Secret Manager. 
+The simplest way is to use the AWS CLI to generate these secrets.
 
 ```sh
-aws secretsmanager create-secret --name gitub.app_id --secret-string "APP-ID"
-
-aws secretsmanager create-secret --name gitub.webhook_secret --secret-string "some-good-secret"
-
-aws secretsmanager create-secret --name gitub.app_private_key --secret-string "$(cat '/path/to/private-key.pem')"
+aws secretsmanager create-secret --name github.app_id --secret-string "APP-ID"
+aws secretsmanager create-secret --name github.webhook_secret --secret-string "some-good-secret"
+aws secretsmanager create-secret --name github.app_private_key --secret-string "$(cat '/path/to/private-key.pem')"
 ```
 
 ## Create a New App
 
-Follow the instructions on how to [Deploy to AWS](https://www.winglang.io/docs/start-here/aws)
+Follow the instructions on how to [Deploy to AWS](https://www.winglang.io/docs/start-here/aws).
 
-**Notice**: The webhook URL of your new GitHub app should be modified to a AWS public URL once `terraform apply` is done
+**Notice**: The webhook URL of your new GitHub app should be modified to an AWS public URL once `terraform apply` is completed.
 
-🚀 You know have your own grammar fixer, Hope you had fun!!!  🚀
+🚀 You now have your own grammar fixer. Hope you had fun!!! 🚀
+
