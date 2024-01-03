@@ -8,12 +8,12 @@ This repo is a step-by-step guide for an online workshop ([Eventbrite](https://w
 
 Please [join Winglang's Slack](https://t.winglang.io/slack); we have a dedicated channel for this workshop [#workshop-bedrock](https://winglang.slack.com/archives/C06BWT4PC30).
 
-## During the session, you'll learn the following:
+## During the session, you'll learn the following
 
+- Build a GitHub App and Deploy it to AWS (using terraform)
 - Introduction to [Amazon Bedrock](https://aws.amazon.com/bedrock/)
 - Using Amazon Bedrock resources from Wing
-- Creating a GitHub App that edits files
-- How to produce ready-to-apply Terraform assets
+- Creating a GitHub App from scrath, developing it locally
 
 ### Some General Resources
 
