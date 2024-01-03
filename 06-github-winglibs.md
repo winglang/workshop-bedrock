@@ -65,6 +65,8 @@ This URL will constantly change on any new hot reload of the localhost applicati
 
 ### Let's See it in Action
 
+Open a Pull Request in the connected Repo.
+
 You should see the log notifying you that a PR was created in the Wing console.
 
 ### Challenge
