@@ -166,7 +166,11 @@ Storing the PEM file in a JSON format is a bit tricky, due to the sensitivity to
 You can use `jq` ([Install jq](https://jqlang.github.io/jq/)) to generate your `~/.wing/secrets.json` with the following command:
 
 ```sh
-jq --null-input   --arg secret "this-is-a-bad-secret"   --arg app_id "some-app-id"   --arg private_key "$(cat '/path/to/private-key.pem')"   '{"github.webhook_secret": $secret, "github.app_id": $app_id, "github.app_private_key": $private_key}' > ~/.wing/secrets.json
+jq --null-input \
+  --arg secret "this-is-a-bad-secret" \
+  --arg app_id "some-app-id" \
+  --arg private_key "$(cat '/path/to/private-key.pem')" \
+  '{"github.webhook_secret": $secret, "github.app_id": $app_id, "gitub.app_private_key": $private_key}' > ~/.wing/secrets.json```
 ```
 
 🚀 Now that it is verified to be working on the sim, let's deploy the app on AWS. 🚀
