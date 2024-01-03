@@ -1,7 +1,7 @@
 In this section, we will ensure that:
 - Wing is installed and functioning properly on your machine.
 - An AWS account is configured and CLI installed with the required credentials.
-- Access is granted for Amazon Bedrock foundation models.
+- Access to Amazon Bedrock foundation models.
 - ngrok is installed and working.
 
 ## Wing 
