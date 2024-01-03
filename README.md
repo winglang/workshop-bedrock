@@ -27,6 +27,8 @@ Please [join Winglang's Slack](https://t.winglang.io/slack); we have a dedicated
 
 A GitHub Application (AKA GitHub bot) that listens to any incoming pull requests and corrects spelling, grammar, & punctuation for any `*.md` files changed during the pull request.
 
+[See Demo](https://www.youtube.com/watch?v=VzV4lqu9Fhs&t=2s)
+
 ### Workshop Sessions
 
 1. **Setup & Prerequisites** - Tools, setup, and getting access to AWS Bedrock Foundation Models ([link](./01-setup.md)).
