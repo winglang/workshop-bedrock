@@ -1,9 +1,10 @@
-In this section we will be using `anthropic.claude-v2:1` Foundation Model
-to correct the english for every `*.md` file that we find
+In this section, we will be using the `anthropic.claude-v2:1` Foundation Model
+to correct the English for every `*.md` file that we find.
 
 ## Challenge
 
-Based on `@winglibs/github` [README.md](https://www.npmjs.com/package/@winglibs/github) and the work that we've done in the [bedrock session](./04-bedrock.md) try to have a commit that spell checks all markdown files
+Based on the `@winglibs/github` [README.md](https://www.npmjs.com/package/@winglibs/github) and the work that we've done in the [bedrock session](./04-bedrock.md), try to have a commit that spell checks all markdown files.
+
 
 <details>
 <summary>Solution</summary>
@@ -113,11 +114,11 @@ Based on `@winglibs/github` [README.md](https://www.npmjs.com/package/@winglibs/
      
 </details>
 
-## Getting ready for AWS, Lets use Secrets
+## Getting Ready for AWS, Let's Use Secrets
 
-Currently the credentials are known at build time, which means that they
-are included in the application bundle (js and terraform). We should
-move to using `cloud.Secret` for each of these values instead
+Currently, the credentials are known at build time, which means that they
+are included in the application bundle (JavaScript and Terraform). We should
+move to using `cloud.Secret` for each of these values instead.
 
 ### Challenge
 
@@ -151,17 +152,18 @@ Can you implement the `github.IProbotAppCredentialsSupplier` interface using the
 
 </details>     
 
-### How to use Secrets on Sim
 
-To make the above `SecretCredentialsProvider` work on the simulator you
-need to create a JSON file under `~/.wing/secret.json` with the following keys:
-- `gitub.app_private_key`
+### How to Use Secrets on Sim
+
+To make the above `SecretCredentialsProvider` work on the simulator, you
+need to create a JSON file under `~/.wing/secrets.json` with the following keys:
+- `github.app_private_key`
 - `github.webhook_secret`
 - `github.app_id`
 
-Storing the pem file in a json format is a bit tricky, because of the sensitivity to any white space chars and its structure.
+Storing the PEM file in a JSON format is a bit tricky, due to the sensitivity to any whitespace characters and its structure.
 
-You can use `jq` ([Install jq](https://jqlang.github.io/jq/)) to generate your `~/.wing/secret.json` with the following command:
+You can use `jq` ([Install jq](https://jqlang.github.io/jq/)) to generate your `~/.wing/secrets.json` with the following command:
 
 ```sh
 jq --null-input \
@@ -171,5 +173,6 @@ jq --null-input \
   '{"github.webhook_secret": $secret, "github.app_id": $app_id, "gitub.app_private_key": $private_key}' > ~/.wing/secrets.json
 ```
 
+🚀 Now that it is verified to be working on the sim, let's deploy the app on AWS. 🚀
 
-🚀 Now that it is verified to be working on the sim, lets deploy the app on AWS 🚀
+
