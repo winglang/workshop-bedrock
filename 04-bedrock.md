@@ -1,7 +1,6 @@
-In this section, we will be installing `@winglibs/bedrock` package and 
-play with it locally. 
+In this section, we will be installing the `@winglibs/bedrock` package and playing with it locally.
 
-## Create a new Project 
+## Create a New Project
 
 ```sh
 # Create a fresh new project
@@ -14,15 +13,15 @@ npm init --yes
 
 ## Install `@winglibs/bedrock`
 
-Install `@winglibs/bedrock`
+Install `@winglibs/bedrock`:
 
 ```sh
 npm install --save @winglibs/bedrock
 ```
 
-## Let's use the Bedrock module 
+## Let's Use the Bedrock Module
 
-Create the following `bedrock.main.w` file
+Create the following `bedrock.main.w` file:
 
 ```ts
 bring cloud;
@@ -47,6 +46,7 @@ new cloud.Function(inflight (topic: str) => {
   return joke;
 });
 ```
+
 Run the above code:
 
 ```sh
@@ -57,5 +57,4 @@ Now you can invoke the cloud.Function and provide it with a joke topic, using th
 
 ![Console Invoke](./assets/bedrock-console.png)
 
-
-🚀 We will later use the bedrock module to fix the grammar of markdown files, but first lets create a GitHub app 🚀
+🚀 We will later use the bedrock module to fix the grammar of markdown files, but first, let's create a GitHub app. 🚀
