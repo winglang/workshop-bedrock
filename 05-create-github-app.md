@@ -18,9 +18,12 @@ Click "New GitHub App" and complete the form:
 - Subscribe to events:
    - Pull request
    - Push
-- Save
-- Notice the app id and save it.
-- Generate a private key for the app - The generated key will be downloaded to your computer.
+
+Click **"Create GitHub App"**
+
+Notice the app id and save it.
+
+In the bottom of the page click **"Generate a private key"** - The generated key will be downloaded to your computer.
 
 ## Install the App
 
