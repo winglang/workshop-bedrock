@@ -30,14 +30,17 @@ bring fs;
 class SimpleCredentialsSupplier impl github.IProbotAppCredentialsSupplier {
    
    pub inflight getId(): str {
+    // TODO place app id
     return "app id";
    }
 
    pub inflight getWebhookSecret(): str {
+    // TODO place webhook secret
     return "some-webhook-secret";
    }
 
    pub inflight getPrivateKey(): str {
+    // TODO place path to private key
     return fs.readFile("/path/to/private-key.pem");
    }
 }
