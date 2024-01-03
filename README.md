@@ -25,18 +25,18 @@ Please [join Winglang's Slack](https://t.winglang.io/slack); we have a dedicated
 
 ## The Application 
 
-A Github Application that listens to any incoming pull requests and corrects spelling, grammar & punctuation for any `*.md` files that were changed during this pull request.
+A Github Application (AKA GitHub bot) that listens to any incoming pull requests and corrects spelling, grammar & punctuation for any `*.md` files that were changed during the pull request.
 
 ### Workshop Sessions 
 
 1. **Setup & Prerequisites** - Tools, setup and getting access to AWS Bedrock Foundation Models ([link](./01-setup.md)) 
 2. **Why Winglang** - Problems with serverless, and the Wing approach ([pdf](https://raw.githubusercontent.com/ekeren/react-wing-workshop/main/assets/why.pdf)). 
 3. **Introduction to Bedrock** - A short introduction to Amazon Bedrock service by [Arik Porat](https://www.linkedin.com/in/arik-porat-15419426/), Solutions Architect at AWS.  
-4. Using Bedrock in Wing - Installing & using `winglibs/bedrock` module ([link](./04-bedrock.md)).
-5. Github App DYI - How to build your own Github Bot ([link](./05-github-diy.md))  
-6. Wing's Github Module - Using `winglibs/github` instead to make an uppercase bot ([link](./06-github-winglibs.md)).
-7. Spell Checking with Bedrock - Modifying the files based on `winglibs/bedrock` ([link]((./07-wrap.md))).
-8. Thank You for Flying with Us - Deploy application to AWS ([link]((./08-deploy.md))).
+4. **Using Bedrock in Wing** - Installing & using `winglibs/bedrock` module ([link](./04-bedrock.md)).
+5. **Create a Github App** - Step by step guide to create a GitHub app ([link](./05-create-github-app.md)).
+6. **Wing's Github Module** - Using `winglibs/github` instead to make an uppercase bot ([link](./06-github-winglibs.md)).
+7. **Spell Checking with Bedrock** - Modifying the files based on `winglibs/bedrock` ([link]((./07-fix-english-please.md))).
+8. **Deploy to AWS** - Deploy application to AWS ([link]((./08-deploy.md))).
 
 ---
 

@@ -88,7 +88,7 @@ Based on `@winglibs/github` [README.md](https://www.npmjs.com/package/@winglibs/
     class SimpleCredentialsSupplier impl github.IProbotAppCredentialsSupplier {
       
       pub inflight getId(): str {
-      return "772448";
+      return "APP ID";
       }
 
       pub inflight getWebhookSecret(): str {
@@ -113,7 +113,7 @@ Based on `@winglibs/github` [README.md](https://www.npmjs.com/package/@winglibs/
      
 </details>
 
-## Not Ready for AWS yet - Lets use Secrets
+## Getting ready for AWS, Lets use Secrets
 
 Currently the credentials are known at build time, which means that they
 are included in the application bundle (js and terraform). We should
@@ -148,6 +148,7 @@ Can you implement the `github.IProbotAppCredentialsSupplier` interface using the
     }
 
     let credentialsProvider = new SecretCredentialsProvider();
+
 </details>     
 
 ### How to use Secrets on Sim
@@ -170,14 +171,5 @@ jq --null-input \
   '{"github.webhook_secret": $secret, "github.app_id": $app_id, "gitub.app_private_key": $private_key}' > ~/.wing/secrets.json
 ```
 
-### How to create Secrets on AWS
 
-The simplest way is to use AWS CLI in order to generate these secrets.
-
-```sh
-aws secretsmanager create-secret --name gitub.app_id --secret-string "APP-ID"
-
-aws secretsmanager create-secret --name gitub.webhook_secret --secret-string "this-is-a-bad-secret"
-
-aws secretsmanager create-secret --name gitub.app_private_key --secret-string "$(cat '/path/to/english-grammar-fixer.private-key.pem')"
-```
+🚀 Now that it is verified to be working on the sim, lets deploy the app on AWS 🚀

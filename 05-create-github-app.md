@@ -6,7 +6,7 @@ required permission to commit changes to an open pull request
 Goto https://github.com/settings/apps
 
 Click "New GitHub App" and complete form:
-- GitHub App Name: my english editor
+- GitHub App Name: my english editor (dev)
 - Homepage URL: e.g. https://winglang.io
 - Webhook:
   - Active: ✅

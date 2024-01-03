@@ -63,13 +63,13 @@ has changed to a ngrok generate URL. You can observe this under your application
 
 This URL will constantly change on any new hot reload of the localhost application. 
 
-### Lets create a PR
+### Lets See it in Action
 
-You should see the log notifying you that a PR was created?
+You should see the log notifying you that a PR was created, in wing console
 
 ### Challenge
 
-Follow @winglibs/github [README.md](https://www.npmjs.com/package/@winglibs/github) file to see how to replace all 
+Follow `@winglibs/github`` [README.md](https://www.npmjs.com/package/@winglibs/github) file to see how to replace all 
 changed markdown files with a uppercase version of them.
 
 🚀 Great, next we will use `anthropic.claude-v2:1` foundation model to make the correct commit 🚀
