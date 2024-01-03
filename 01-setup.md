@@ -70,12 +70,11 @@ We will be using AWS Bedrock.
 We will be using ngrok for tunneling GitHub webhooks into our localhost 
 from a known and accessible address. 
 
-- [Install ngrok](https://ngrok.com/docs/getting-started/)
-
+[Install ngrok](https://ngrok.com/docs/getting-started/)
 
 ## Amazon Bedrock Foundation Model Access
 
-AWS Bedrock can only be accessed from the us-east-1 region. Make sure all your credentials and applications reside in this region, so you don’t encounter a permission denied exception.
+**Note:**  AWS Bedrock can only be accessed from the us-east-1 region. Make sure all your credentials and applications reside in this region, so you don’t encounter a permission denied exception.
 
 1. Log into the AWS Console and navigate to Amazon Bedrock.
 2. In the Bedrock screen, at the bottom left-hand corner, click on the model access menu and request access to Anthropic Claude (& Claude Instant) foundation Models.

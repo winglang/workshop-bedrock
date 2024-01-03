@@ -57,4 +57,10 @@ Now you can invoke the cloud.Function and provide it with a joke topic, using th
 
 ![Console Invoke](./assets/bedrock-console.png)
 
+
+## Challenge
+
+Are you able to create a Prompt that will accept a markdown files 
+and return a markdown file with perfect English?
+
 🚀 We will later use the bedrock module to fix the grammar of markdown files, but first, let's create a GitHub app. 🚀
