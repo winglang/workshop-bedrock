@@ -7,7 +7,7 @@ Go to https://github.com/settings/apps
 
 Click "New GitHub App" and complete the form:
 - GitHub App Name: my English editor (dev)
-- Homepage URL: e.g., https://winglang.io
+- Homepage URL: any will do (e.g. https://winglang.io)
 - Webhook:
   - Active: ✅
   - URL: http://this-will-change.com
