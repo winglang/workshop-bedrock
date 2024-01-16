@@ -4,6 +4,8 @@ _Building a Serverless Workflow, Powered by AI_
 
 This repo is a step-by-step guide for an online workshop ([Eventbrite](https://www.eventbrite.com/e/amazon-bedrock-winglang-tickets-769562721817)).
 
+This workshop is available on [youtube](https://youtu.be/0o1BYccryNQ?si=BLtkHG-qKxl95_gY)
+
 ## Any issues? Questions? Let's talk!
 
 Please [join Winglang's Slack](https://t.winglang.io/slack); we have a dedicated channel for this workshop [#workshop-bedrock](https://winglang.slack.com/archives/C06BWT4PC30).
